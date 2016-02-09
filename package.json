@@ -1,0 +1,22 @@
+{
+  "name": "heroku-fork-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HektorW/heroku-fork-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HektorW/heroku-fork-test/issues"
+  },
+  "homepage": "https://github.com/HektorW/heroku-fork-test#readme",
+  "dependencies": {
+    "blockchain-wallet-service": "^0.14.1"
+  }
+}
