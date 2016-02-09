@@ -1,14 +1,16 @@
 'use strict';
 
-var http = require('http');
+var app = require('express')();
+var apiProxy = require('http-proxy').createProxyServer();
 
-var server = http.createServer(function(req, res) {
-	res.writeHeader(200, { 'Content-Type': 'text/plain' });
-	res.write('Hello world');
-	res.end();
+app.get('/*', function(req, res) {
+	apiProxy.web(req, res, {
+		target: 'http://127.0.0.1:3000'
+	}, function(error) { console.error(error) });
 });
 
-server.listen(process.env.PORT || 9000);
+app.listen(process.env.PORT || 9000);
+
 
 //
 // Spawn

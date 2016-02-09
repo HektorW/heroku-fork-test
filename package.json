@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/HektorW/heroku-fork-test#readme",
   "dependencies": {
-    "blockchain-wallet-service": "^0.14.1"
+    "blockchain-wallet-service": "^0.14.1",
+    "express": "^4.13.4",
+    "http-proxy": "^1.13.1"
   }
 }
